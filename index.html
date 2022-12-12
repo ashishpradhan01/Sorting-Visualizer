@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="sorting.css" />
+  </head>
+  <body>
+    <h1>📊 Sorting Visualizer 📊</h1>
+    <nav class="flex container">
+      <div class="size-container">
+        <label for="arr-size">Max Value(200)</label>
+        <input
+          id="arr-size"
+          type="number"
+          min="2"
+          max="200"
+          value="50"
+          class="size-input"
+        />
+        <button class="primary-button new-array-button">New Array</button>
+      </div>
+      <div class="action-buttons-container">
+        <button class="primary-button bubble-sort-button">Bubble Sort</button>
+        <button class="primary-button selection-sort-button">
+          Selection Sort
+        </button>
+        <button class="primary-button insertion-sort-button">
+          Insertion Sort
+        </button>
+        <button class="primary-button quick-sort-button">Quick Sort</button>
+        <button class="primary-button merge-sort-button">Merge Sort</button>
+      </div>
+    </nav>
+    <div class="container bars-container flex"></div>
+    <div class="container message"></div>
+    <script src="./sorting.js"></script>
+  </body>
+</html>
