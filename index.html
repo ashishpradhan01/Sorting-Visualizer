@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="sorting.css" />
+    <script type="module" src="./sorting.js" defer></script>
   </head>
   <body>
     <h1>📊 Sorting Visualizer 📊</h1>
     <nav class="flex container">
       <div class="size-container">
-        <label for="arr-size">Max Value(200)</label>
+        <label for="arr-size">Min: 0, Max: 200 Size</label>
         <input
           id="arr-size"
           type="number"
           min="2"
           max="200"
-          value="50"
+          value="30"
           class="size-input"
         />
         <button class="primary-button new-array-button">New Array</button>
@@ -30,12 +31,13 @@
         <button class="primary-button insertion-sort-button">
           Insertion Sort
         </button>
-        <button class="primary-button quick-sort-button">Quick Sort</button>
         <button class="primary-button merge-sort-button">Merge Sort</button>
+        <button class="primary-button quick-sort-button">Quick Sort</button>
       </div>
     </nav>
     <div class="container bars-container flex"></div>
-    <div class="container message"></div>
-    <script src="./sorting.js"></script>
+    <p class="container total-time"></p>
   </body>
 </html>
+
+<!-- https://github.com/CrazyReborn/hamilton-canvas/blob/main/scripts/algorithms/quickSort.js -->

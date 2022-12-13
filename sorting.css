@@ -103,3 +103,7 @@ input:focus {
   font-size: 1.5rem;
   color: lightgreen;
 }
+
+.total-time {
+  text-align: right;
+}
